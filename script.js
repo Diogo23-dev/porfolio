@@ -23,11 +23,12 @@ window.addEventListener("scroll", () => {
         );
     });
 });
+
 // Ecriture magique
 const words = [
-    "Devéloppeur Web",
-    "Passionner Par Informatique",
-    "Très polyvalent"
+    "Devéloppeur Web.",
+    "Passionner Par Informatique.",
+    "Très polyvalent."
 ];
 
 let wordIndex = 0;
