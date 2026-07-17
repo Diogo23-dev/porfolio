@@ -17,7 +17,7 @@ Le site présente :
 
 Voir le site en ligne :
 
-https://diogo23-dev.github.io/portfolio/
+https://diogo23-dev.github.io/porfolio/
 
 ## 🛠️ Technologies utilisées
 
@@ -27,11 +27,9 @@ https://diogo23-dev.github.io/portfolio/
 - Git
 - GitHub Pages
 
-## 📂 Structure du projet
-
 ## ⚙️ Installation en local
 
 Cloner le projet :
 
 ```bash
-git clone https://github.com/diogo23-dev/portfolio.git
+git clone https://github.com/Diogo23-dev/porfolio.git
