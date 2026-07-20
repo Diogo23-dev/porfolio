@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="shortcut icon" href="src/assets/logo.svg" type="image/x-icon">
+    <title>Message envoyé</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        h1 {
+            font-size: 35px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <h1>Merci pour votre message !</h1>
+
+    <p>
+        Votre demande a bien été envoyée.<br>
+        Je vous répondrai dans les meilleurs délais.
+    </p>
+    <p>
+        Retour automatique dans <span id="count">5</span> secondes...
+    </p>
+
+    <script>
+    let secondes = 5;
+
+    let compteur = setInterval(() => {
+
+        secondes--;
+
+        document.getElementById("count").textContent = secondes;
+
+        if(secondes === 0){
+            clearInterval(compteur);
+            window.location.href = "index.html";
+        }
+
+    },1000);
+
+    // Lancer les confettis à l'ouverture
+    confetti({
+        particleCount: 120,
+        spread: 80,
+        origin: {
+            y: 0.6
+        }
+    });
+    </script>
+
+</body>
+</html>

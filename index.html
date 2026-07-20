@@ -314,24 +314,46 @@
 
 
             <!-- Formulaire -->
-            <form class="contact-form">
+            <form class="contact-form" action="https://formsubmit.co/c9b8c575253fa52276dc5f4705f37812" method="POST">
 
                 <div class="input-group">
-                    <input type="text" placeholder="Votre nom" required>
+                    <input 
+                        type="text" 
+                        name="nom"
+                        placeholder="Votre nom" 
+                        required>
                 </div>
 
                 <div class="input-group">
-                    <input type="email" placeholder="Votre email" required>
+                    <input 
+                        type="email" 
+                        name="email"
+                        placeholder="Votre email" 
+                        required>
                 </div>
 
                 <div class="input-group">
-                    <input type="text" placeholder="Sujet">
+                    <input 
+                        type="text" 
+                        name="sujet"
+                        placeholder="Sujet">
                 </div>
 
                 <div class="input-group">
-                    <textarea placeholder="Votre message" rows="5"></textarea>
+                    <textarea 
+                        name="message"
+                        placeholder="Votre message" 
+                        rows="5"
+                        required></textarea>
                 </div>
 
+
+                <!-- Options FormSubmit -->
+                <input type="hidden" name="_subject" value="Nouveau message depuis mon portfolio">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/merci.html">
                 <button type="submit">
                     Envoyer
                 </button>
