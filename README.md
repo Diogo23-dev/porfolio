@@ -1,6 +1,6 @@
 # Portfolio Développeur Web - Abdoulaye Diallo
 
-![Aperçu du portfolio](src\assets\portfolio.png)
+![Aperçu du portfolio](src/assets/portfolio.png)
 
 ## 📌 Description
 ![HTML](https://img.shields.io/badge/HTML5-orange)
