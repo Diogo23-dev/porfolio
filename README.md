@@ -1,35 +1,46 @@
-# Portfolio Développeur Web - Abdoulaye Diallo
+# Astro Starter Kit: Basics
 
-![Aperçu du portfolio](src/assets/portfolio.png)
+```sh
+npm create astro@latest -- --template basics
+```
 
-## 📌 Description
-![HTML](https://img.shields.io/badge/HTML5-orange)
-![CSS](https://img.shields.io/badge/CSS3-blue)
-Portfolio personnel développé pour présenter mes compétences, mes projets et mon parcours en développement web.
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-Le site présente :
-- Mon profil
-- Mes compétences techniques
-- Mes projets réalisés
-- Mes informations de contact
+## 🚀 Project Structure
 
-## 🚀 Démo
+Inside of your Astro project, you'll see the following folders and files:
 
-Voir le site en ligne :
+```text
+/
+├── public/
+│   └── favicon.svg
+├── src
+│   ├── assets
+│   │   └── astro.svg
+│   ├── components
+│   │   └── Welcome.astro
+│   ├── layouts
+│   │   └── Layout.astro
+│   └── pages
+│       └── index.astro
+└── package.json
+```
 
-https://diogo23-dev.github.io/porfolio/
+To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
 
-## 🛠️ Technologies utilisées
+## 🧞 Commands
 
-- HTML5
-- CSS3
-- JavaScript
-- Git
-- GitHub Pages
+All commands are run from the root of the project, from a terminal:
 
-## ⚙️ Installation en local
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-Cloner le projet :
+## 👀 Want to learn more?
 
-```bash
-git clone https://github.com/Diogo23-dev/porfolio.git
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

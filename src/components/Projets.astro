@@ -1,0 +1,15 @@
+---
+import ProjectCard from './ProjetCard.astro';
+---
+<section id="projects" class="projects container">
+    <div class="division"></div>
+    <div class="content-text">
+        <h2>Mes projets</h2>
+        <p>Découvrez quelques projets réalisés avec différentes technologies.</p>
+    </div>
+    <div class="projects-container">
+        <ProjectCard  title="Portfolio développeur" description="Un site portfolio moderne pour présenter mon profil, mes compétences et mes réalisations." technologies={['Astro']} image="/portfolio.png" />
+        <ProjectCard  title="Gestion scolaire" description="Application de gestion des élèves, notes et paiements." technologies={['Laravel', 'Livewire', 'MySQL']} image="/departement.jpg" />
+    </div>
+
+</section>

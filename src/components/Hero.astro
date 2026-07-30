@@ -1,0 +1,74 @@
+
+<section class="header-container" id="maison">
+    <img
+        class="profile-image"
+        src="diogo_light.png"
+        alt="Ma photo de profil"
+    />
+    <h1>Bonjour, je suis</h1>
+    <h1>Diallo Abdoulaye Diogo</h1>
+
+    <div class="content-text">
+        <h2>Je Suis
+            <span class="typing"></span>
+        </h2>
+        <p>
+        Développeur Web et passionné par la création de solutions numériques, avec une expérience en administration et assistance des systèmes d'information.
+        </p>
+    </div>
+    <a
+        href="#contact"
+        class="btn btn-primary"
+        >Contactez Moi</a
+    >
+</section>
+
+<script>
+   // Ecriture magique
+const words = [
+    "Devéloppeur Web.",
+    "Passionner Par Informatique.",
+    "Très polyvalent."
+];
+
+let wordIndex = 0;
+let charIndex = 0;
+let deleting = false;
+
+const typing = document.querySelector(".typing");
+
+function type() {
+
+    let currentWord = words[wordIndex];
+
+    if (!deleting) {
+
+        typing.textContent = currentWord.substring(0, charIndex++);
+        
+        if (charIndex > currentWord.length) {
+            deleting = true;
+            setTimeout(type, 1500);
+            return;
+        }
+
+    } else {
+
+        typing.textContent = currentWord.substring(0, charIndex--);
+
+        if (charIndex === 0) {
+            deleting = false;
+            wordIndex++;
+
+            if (wordIndex === words.length) {
+                wordIndex = 0;
+            }
+        }
+    }
+
+
+    setTimeout(type, deleting ? 50 : 100);
+}
+
+type();
+ 
+</script>
