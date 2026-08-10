@@ -1,56 +1,68 @@
-
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding-top: 100px;
-    }
-
-    h1 {
-        font-size: 35px;
-    }
-
-    p {
-        font-size: 18px;
-    }
-</style>
-
-<h1>Merci pour votre message ! Je vous répondrai dans les plus brefs délais.</h1>
-
-<p>
-    Votre demande a bien été envoyée.<br>
-    Je vous répondrai dans les meilleurs délais.
-</p>
-<p>
-    Retour automatique dans <span id="count">5</span> secondes...
-</p>
-    <script is:inline src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
-
-
-    <script is:inline>
-        let secondes = 5;
-
-        let compteur = setInterval(() => {
-
-            secondes--;
-
-            document.getElementById("count").textContent = secondes;
-
-            if(secondes === 0){
-                clearInterval(compteur);
-                window.location.href = "/";
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/logo.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Portfolio Diogo</title>
+	</head>
+	<body>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding-top: 100px;
             }
 
-        },1000);
-
-
-        confetti({
-            particleCount: 120,
-            spread: 80,
-            origin: {
-                y: 0.6
+            h1 {
+                font-size: 35px;
             }
-        });
-    </script>
+
+            p {
+                font-size: 18px;
+            }
+        </style>
+
+        <h1>Merci pour votre message ! Je vous répondrai dans les plus brefs délais.</h1>
+
+        <p>
+            Votre demande a bien été envoyée.<br>
+            Je vous répondrai dans les meilleurs délais.
+        </p>
+        <p>
+            Retour automatique dans <span id="count">5</span> secondes...
+        </p>
+            <script is:inline src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+
+            <script is:inline>
+                let secondes = 5;
+
+                let compteur = setInterval(() => {
+
+                    secondes--;
+
+                    document.getElementById("count").textContent = secondes;
+
+                    if(secondes === 0){
+                        clearInterval(compteur);
+                        window.location.href = "/";
+                    }
+
+                },1000);
+
+
+                confetti({
+                    particleCount: 120,
+                    spread: 80,
+                    origin: {
+                        y: 0.6
+                    }
+                });
+            </script>
+
+    </body>
+</html>

@@ -1,0 +1,38 @@
+---
+import fs from "node:fs";
+import matter from "gray-matter";
+import { marked } from "marked";
+import MerciLayout from "../../layouts/MerciLayout.astro";
+
+export function getStaticPaths() {
+  const files = fs.readdirSync("./src/content/blog");
+
+  return files.map((file) => ({
+    params: {
+      slug: file.replace(/\.md$/, ""),
+    },
+    props: {
+      file,
+    },
+  }));
+}
+
+const { file } = Astro.props;
+
+const markdown = fs.readFileSync(
+  `./src/content/blog/${file}`,
+  "utf-8"
+);
+
+const { data, content } = matter(markdown);
+
+const htmlContent = await marked(content);
+---
+
+<MerciLayout title={data.title}>
+  <article class="article">
+
+    <div class="article-content" set:html={htmlContent}></div>
+
+  </article>
+</MerciLayout>

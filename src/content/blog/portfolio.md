@@ -21,6 +21,10 @@ Ce projet consiste à créer mon portfolio personnel afin de présenter mon parc
 
 Le portfolio constitue ma vitrine professionnelle et permet aux recruteurs ou aux clients de découvrir rapidement mon profil et mes réalisations.
 
+## Aperçu du portfolio
+
+![Aperçu de mon portfolio](../../../public/portfolio.png)
+
 ## Objectifs
 
 - Présenter mon parcours et mes compétences.

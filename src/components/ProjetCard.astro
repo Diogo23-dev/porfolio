@@ -1,5 +1,5 @@
 ---
-const {title, description, technologies, image} = Astro.props;
+const {title, description, technologies, image, lien} = Astro.props;
 ---
 
 
@@ -18,7 +18,7 @@ const {title, description, technologies, image} = Astro.props;
             </div>
 
             <div class="project-links">
-                <a href="#">
+                <a href={ lien }>
                     Voir le projet
                 </a>
 
