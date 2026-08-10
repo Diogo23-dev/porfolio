@@ -48,48 +48,52 @@ Astro transforme automatiquement ces fichiers en pages web accessibles depuis le
 
 ```text
 /
-├── public/
-│   ├── assets/
-│   ├── images/
-│   └── pdf/
-│       └── DialloAbdoulayeDiogo.pdf
-│
-├── src/
-│   ├── assets/
-│   │
-│   ├── components/
-│   │   ├── ArticleCard.astro
-│   │   ├── Footer.astro
-│   │   ├── Hero.astro
-│   │   ├── Navbar.astro
-│   │   └── ...
-│   │
-│   ├── content/
-│   │   └── blog/
-│   │       ├── portfolio.md
-│   │       ├── gestion-scolaire.md
-│   │       └── ...
-│   │
-│   ├── layouts/
-│   │   ├── MainLayout.astro
-│   │   └── ...
-│   │
-│   ├── pages/
-│   │   ├── index.astro
-│   │   ├── merci.astro
-│   │   └── blog/
-│   │       └── [slug].astro
-│   │
-│   ├── scripts/
-│   │   └── globaljs.js
-│   │
-│   └── styles/
-│       ├── global.css
-│       └── utility.css
-│
+├── AGENTS.md
 ├── astro.config.mjs
+├── CLAUDE.md
+├── package-lock.json
 ├── package.json
-└── README.md
+├── public
+│   ├── departement.jpg
+│   ├── diogo_light.png
+│   ├── logo.svg
+│   ├── moon.svg
+│   ├── pdf
+│   │   └── DialloAbdoulayeDiogo.pdf
+│   ├── portfolio.png
+│   └── sun.svg
+├── README.md
+├── src
+│   ├── assets
+│   │   ├── css
+│   │   │   ├── global.css
+│   │   │   ├── styleNavbar.css
+│   │   │   └── utility.css
+│   │   └── images
+│   ├── components
+│   │   ├── contact.astro
+│   │   ├── Hero.astro
+│   │   ├── merci.astro
+│   │   ├── Nav.astro
+│   │   ├── Navbar.astro
+│   │   ├── ProjetCard.astro
+│   │   ├── Projets.astro
+│   │   ├── SkillCard.astro
+│   │   └── Welcome.astro
+│   ├── content
+│   │   ├── blog
+│   │   │   ├── gestion-scolaire.md
+│   │   │   └── portfolio.md
+│   │   └── init.txt
+│   ├── layouts
+│   │   ├── Layout.astro
+│   │   └── MerciLayout.astro
+│   └── pages
+│       ├── blog
+│       │   └── [slug].astro
+│       ├── index.astro
+│       └── merci.astro
+└── tsconfig.json
 ```
 
 ## 📄 Documentation des projets
