@@ -1,95 +1,97 @@
-
-<header id="hero">
+---
+const base = import.meta.env.BASE_URL;
+---
+<header>
     <nav class="navbar">
-          <div class="container">
-            <!-- Logo -->
-            <h1 id="logo">
-              <a href="#">
-                <!-- <img src="logo.svg" alt="Your Logo"/> -->
-              <svg id="logo" width="180" height="60" viewBox="0 0 180 60" xmlns="http://www.w3.org/2000/svg">
-    
-                <text
-                    x="5"
-                    y="42"
-                    font-family="geist mono"
-                    font-size="38"
-                    font-weight="bold"
-                    fill="#ffcd42">
-                    &lt;
-                </text>
-    
-                <text
-                    x="35"
-                    y="42"
-                    font-family="geist pixel"
-                    font-size="38"
-                    font-weight="bold"
-                    fill="currentColor">
-                    DAD
-                </text>
-    
-                <text
-                    x="110"
-                    y="42"
-                    font-family="geist mono"
-                    font-size="38"
-                    font-weight="bold"
-                    fill="#ffcd42">
-                    /&gt;
-                </text>
-    
-              </svg>
-              </a>
-            </h1>
-            <!-- Navbar links -->
-            <ul class="nav-menu">
-              <li><a class="nav-link" href="https://diogo23-dev.github.io/porfolio/#maison">ACCUEIL</a></li>
-              <li><a class="nav-link" href="https://diogo23-dev.github.io/porfolio/#competences">COMPETENCES</a></li>
-              <li><a class="nav-link" href="https://diogo23-dev.github.io/porfolio/#projects">PROJETS</a></li>
-              <li><a class="nav-link" href="https://diogo23-dev.github.io/porfolio/#contact">CONTACTE</a></li>
-              <li>
-                <a
-                  class="nav-link btn btn-primary"
-                  href="/pdf/DialloAbdoulayeDiogo.pdf"
-                  >CV 
-                  <svg class="fas fa-arrow-right" viewBox="0 0 500 500"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
-                </a>
-              </li>
-            </ul>
-    
-              <!-- Toggle switch -->
-            <div class="theme-switch">
-              <input type="checkbox" id="switch" />
-              <label class="toggle-icons" for="switch">
-                <img class="moon" src="/moon.svg" />
-                <img class="sun" src="/sun.svg" />
-                </label>
-            </div>
-          </div>
-      </nav>
+      <div class="container">
+        <!-- Logo -->
+        <h1 id="logo">
+          <a href={`${base}#maison`}>
+            <!-- <img src="logo.svg" alt="Your Logo"/> -->
+          <svg id="logo" width="180" height="60" viewBox="0 0 180 60" xmlns="http://www.w3.org/2000/svg">
+
+            <text
+                x="5"
+                y="42"
+                font-family="geist mono"
+                font-size="38"
+                font-weight="bold"
+                fill="#ffcd42">
+                &lt;
+            </text>
+
+            <text
+                x="35"
+                y="42"
+                font-family="geist pixel"
+                font-size="38"
+                font-weight="bold"
+                fill="currentColor">
+                DAD
+            </text>
+
+            <text
+                x="110"
+                y="42"
+                font-family="geist mono"
+                font-size="38"
+                font-weight="bold"
+                fill="#ffcd42">
+                /&gt;
+            </text>
+
+          </svg>
+          </a>
+        </h1>
+        <!-- Navbar links -->
+        <ul class="nav-menu">
+          <li><a class="nav-link" href={`${base}#maison`}>ACCUEIL</a></li>
+          <li><a class="nav-link" href={`${base}#competences`}>COMPETENCES</a></li>
+          <li><a class="nav-link" href={`${base}#projects`}>PROJETS</a></li>
+          <li><a class="nav-link" href={`${base}#contact`}>CONTACTE</a></li>
+          <li>
+            <a
+              class="nav-link btn btn-primary"
+              href={`${base}/pdf/DialloAbdoulayeDiogo.pdf`}
+              >CV 
+              <svg class="fas fa-arrow-right" viewBox="0 0 500 500"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+            </a>
+          </li>
+        </ul>
+
+          <!-- Toggle switch -->
+        <div class="theme-switch">
+          <input type="checkbox" id="switch" />
+          <label class="toggle-icons" for="switch">
+            <img class="moon" src={`${base}/moon.svg`} />
+            <img class="sun" src={`${base}/sun.svg`} />
+            </label>
+        </div>
+      </div>
+    </nav>
       <!-- Navbar Mobile -->
       <nav class="mobile-nav">
-          <a href="https://diogo23-dev.github.io/porfolio/#maison" class="nav-link active">
+          <a href={`${base}#maison`} class="nav-link active">
               <i class="fas fa-home"></i>
               <!-- <span class="nav-text">Accueil</span> -->
           </a>
     
-          <a href="https://diogo23-dev.github.io/porfolio/#competences" class="nav-link" >
+          <a href={`${base}#competences`} class="nav-link" >
               <i class="fas fa-laptop-code"></i>
               <!-- <span class="nav-text">Projects</span> -->
           </a>
     
-          <a href="https://diogo23-dev.github.io/porfolio/#projects" class="nav-link" >
+          <a href={`${base}#projects`} class="nav-link" >
               <i class="fas fa-briefcase"></i>
               <!-- <span class="nav-text">Projects</span> -->
           </a>
     
-          <a href="https://diogo23-dev.github.io/porfolio/#contact" class="nav-link">
+          <a href={`${base}#contact`} class="nav-link">
               <i class="fas fa-envelope"></i> <br>
               <!-- <span class="nav-text">Contact</span> -->
           </a>
     
-          <a class="nav-link btn btn-primary" href="/pdf/DialloAbdoulayeDiogo.pdf" download>
+          <a class="nav-link btn btn-primary" href={`${base}/pdf/DialloAbdoulayeDiogo.pdf`} download>
               <i class="fas fa-download"></i>
               <span style="font-weight: bolder;">CV</span>
               <svg class="fas fa-arrow-right" viewBox="0 0 500 500"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>

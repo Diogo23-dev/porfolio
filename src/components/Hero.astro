@@ -1,15 +1,17 @@
-
+---
+const base = import.meta.env.BASE_URL;
+---
 <section class="header-container" id="maison">
     <img
         class="profile-image"
-        src="diogo_light.png"
+        src={`${base}diogo_light.png`}
         alt="Ma photo de profil"
     />
     <h1>Bonjour, je suis</h1>
     <h1>Diallo Abdoulaye Diogo</h1>
 
     <div class="content-text">
-        <h2>Je Suis
+        <h2>Je Suis 
             <span class="typing"></span>
         </h2>
         <p>
@@ -26,9 +28,9 @@
 <script>
    // Ecriture magique
 const words = [
-    "Devéloppeur Web.",
-    "Passionner Par Informatique.",
-    "Très polyvalent."
+    " Devéloppeur Web.",
+    " Passionner Par Informatique.",
+    " Très polyvalent."
 ];
 
 let wordIndex = 0;
