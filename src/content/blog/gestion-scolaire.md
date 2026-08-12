@@ -18,9 +18,9 @@ Le projet est basé sur une application web permettant de remplacer une partie d
 
 L'objectif est de disposer d'une solution plus structurée, plus fiable et plus facile à maintenir.
 
-## Aperçu du portfolio
+## Aperçu de l'Application
 
-![Aperçu de mon portfolio](../../../public/departement.jpg)
+![Aperçu de l'interface de l'application](../departement.jpg)
 
 
 ## Objectifs du projet

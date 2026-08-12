@@ -23,7 +23,7 @@ Le portfolio constitue ma vitrine professionnelle et permet aux recruteurs ou au
 
 ## Aperçu du portfolio
 
-![Aperçu de mon portfolio](../../../public/portfolio.png)
+![Aperçu de mon portfolio](../portfolio.png)
 
 ## Objectifs
 
