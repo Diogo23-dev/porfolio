@@ -20,7 +20,7 @@ L'objectif est de disposer d'une solution plus structurée, plus fiable et plus 
 
 ## Aperçu de l'Application
 
-![Aperçu de l'interface de l'application](../departement.jpg)
+![Aperçu de l'interface de l'application](/porfolio/departement.jpg)
 
 
 ## Objectifs du projet
