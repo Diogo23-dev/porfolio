@@ -26,7 +26,9 @@ Cette landing page a pour objectif de :
 - Être optimisée pour le référencement naturel (SEO)
 
 > Ce projet n'a pas vocation à être un site web institutionnel complet.
-> Il s'agit d'une landing page courte, orientée présentation et conversion.
+> Il s'agit d'une landing page courte, orientée présentation et conversion
+> [Visitez le site Web ](https://ims-guinee.abdoulayediogodiallo23.workers.dev/)
+
 
 ---
 
